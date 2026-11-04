@@ -80,7 +80,7 @@ dependencies = [
     # Verify upstream TLS through the OS trust store (macOS Keychain, Windows
     # cert store), where IT installs corporate TLS-inspection roots (Zscaler,
     # Netskope). Pure Python, no deps; the same library pip uses by default.
-    "truststore>=0.10.0",
+    "truststore>=0.10.5",
     # Not imported directly: huggingface-hub (via litellm -> tokenizers, so in
     # every install) uses it for Hub downloads. Before 1.6.0 its worker threads
     # could re-initialize or re-enter Python while the interpreter shut down
